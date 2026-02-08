@@ -1,0 +1,19 @@
+POST http://localhost:8000/api/transactions/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "text": "Grocery Shopping2",
+    "amount": -150.75
+}
+###
+GET http://localhost:8000/api/transactions/ HTTP/1.1
+###
+DELETE http://localhost:8000/api/transactions/f4bfaaaa-65ab-479f-a7ab-f58e35b72647/ HTTP/1.1
+###
+PUT http://localhost:8000/api/transactions/090a1bf1-9675-432d-926a-dffed2200b23/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "text": "Updated Grocery Shopping",
+    "amount": -200.00
+}
